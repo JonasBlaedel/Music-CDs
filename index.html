@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <header><h1>Music CDs</h1></header>
+    <main id="container">
+      <section id="input_cds">
+        <div class="cd_input">
+          <label for="author">Author</label>
+          <input id="author" name="txtInputAutor" type="text" />
+        </div>
+        <div class="cd_input">
+          <label for="title">Title</label>
+          <input id="title" name="txtInputTitle" type="text" />
+        </div>
+        <div class="cd_input">
+          <label for="year">Year</label>
+          <input id="year" name="numberInputYear" type="number" max="2024" min="0" maxlength="4" />
+        </div>
+      </section>
+      <button type="submit">Add</button>
+      <table id="container_table">
+        <tbody>
+          <tr>
+            <th class="heading">Author</th>
+            <th class="heading">Title</th>
+            <th class="heading">Year</th>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

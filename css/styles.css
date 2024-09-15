@@ -1,0 +1,115 @@
+@import "./variables.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
+  padding: var(--padding-header);
+  text-align: center;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+#container {
+  padding: var(--padding-header);
+  max-width: 800px;
+  margin: auto;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+#input_cds {
+  display: flex;
+  margin-bottom: var(--padding-table);
+}
+
+.cd_input {
+  flex: 1;
+  min-width: 120px;
+  margin: var(--margin-input);
+}
+
+label {
+  display: block;
+  margin-bottom: var(--padding-label);
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: var(--padding-input);
+  font-size: var(--font-size);
+  border: 1px solid var(--input-border-color);
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+}
+
+button {
+  display: inline-block;
+  padding: var(--padding-button);
+  font-size: var(--font-size);
+  background-color: var(--secondary-color);
+  color: var(--text-color-dark);
+  border: 2px solid var(--border-color);
+  border-radius: var(--button-border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: var(--padding-header);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: var(--padding-table);
+  text-align: left;
+  border-bottom: 1px solid var(--border-light);
+}
+
+th.heading {
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
+  text-align: left;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: var(--secondary-color);
+}
+
+.delete {
+  cursor: pointer;
+}
+
+td:nth-child(1),
+td:nth-child(2) {
+  min-width: 200px;
+}
+
+td:nth-child(3) {
+  width: 100px;
+}
+td:last-child {
+  width: 10px;
+  text-align: center;
+}
