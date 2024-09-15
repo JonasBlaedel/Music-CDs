@@ -33,7 +33,7 @@ h1 {
 #input_cds {
   display: flex;
   margin-bottom: var(--padding-table);
-  gap: 10px; /* add some space between inputs */
+  gap: 10px;
 }
 
 .cd_input {
@@ -78,7 +78,7 @@ button:hover {
 table {
   width: 100%;
   border-collapse: collapse;
-  overflow-x: auto; /* Allow horizontal scrolling */
+  overflow-x: auto;
 }
 
 th,
